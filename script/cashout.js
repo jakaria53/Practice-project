@@ -19,6 +19,16 @@
 
          alert("Cash out successful! Your new balance is: " + newBalance);
             setBalance(newBalance);
+                   //  history container
+    const history= document.getElementById("history-container");
+    const newHistory = document.createElement("div");
+    newHistory.innerHTML= `
+    <div class="transaction-card p-5 bg-base-100">
+                 cashout ${cashOutAmount} tk Success to ${cashOutNumber} ,at ${new Date()} 
+
+         </div>
+         `;
+         history.append(newHistory);
         }
         else {
          alert("Invalid PIN. Please try again.");

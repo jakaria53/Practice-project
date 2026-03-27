@@ -23,12 +23,15 @@ function setBalance(value){
     const addMoney = document.getElementById("add-money");
     const cashOut = document.getElementById("cash-out");
     const history = document.getElementById("history");
+    const sendMoney = document.getElementById("send-money");
+
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");  
     history.classList.add("hidden");
+    sendMoney.classList.add("hidden");
       
 
     const selected = document.getElementById(id);
     selected.classList.remove("hidden");
-    
+
  }

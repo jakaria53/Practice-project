@@ -56,7 +56,7 @@
     <img src="assets/opt-2.png" alt="">
     <p>Cashout</p>
 </button>
-<button class="btn flex-col h-full py-4 btn-primary btn-soft">
+<button onclick="showOnly('send-money')" class="btn flex-col h-full py-4 btn-primary btn-soft">
     <img src="assets/opt-3.png" alt="">
     <p>Send Money</p>
 </button>
@@ -134,6 +134,41 @@
     </div>
 
  </section>
+ <!-- sendmoney -->
+<section id="send-money" class="w-11/12 mx-auto py-5 hidden">
+    <h2 class="text-xl font-bold mb-5">Send Money</h2>
+    <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+            <fieldset class="fieldset">
+
+                <label class="label text-neutral font-bold">Receiver Number</label>
+                <input id="send-number" maxlength="11" type="text"
+                    class="input rounded-full bg-base-200 w-full"
+                    placeholder="Enter 11 digit number" />
+
+                <br>
+
+                <label class="label text-neutral font-bold">Amount</label>
+                <input id="send-amount" type="number"
+                    class="input rounded-full bg-base-200 w-full"
+                    placeholder="Enter amount" />
+
+                <br>
+
+                <label class="label text-neutral font-bold">4 Digit PIN</label>
+                <input id="send-pin" maxlength="4" type="password"
+                    class="input rounded-full bg-base-200 w-full"
+                    placeholder="Enter PIN" />
+
+                <button id="send-btn" class="btn btn-primary mt-4 rounded-full">
+                    Send Money
+                </button>
+
+            </fieldset>
+        </div>
+    </div>
+</section>
+
 <br>
 
  <section id="history" class="w-11/12 mx-auto py-5 hidden">
@@ -149,5 +184,6 @@
  <script src="script/machine.js"></script>
  <script src="script/addMoney.js"></script>
   <script src="script/cashout.js"></script>
+    <script src="script/sendMoney.js"></script>
 </body>
 </html>

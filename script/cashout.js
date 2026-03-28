@@ -1,10 +1,10 @@
- document.getElementById("cashout-btn").addEventListener("click", function() {
-     const cashOutNumber = getValueFromInput("cashout-number");
+ document.getElementById("cashOut-btn").addEventListener("click", function() {
+     const cashOutNumber = getValueFromInput("cashOut-number");
      if(cashOutNumber.length !== 11 ){
         alert("Invalid phone number. Please enter an 11-digit number.");
         return;
       }
-     const cashOutAmount = getValueFromInput("cashout-amount");
+     const cashOutAmount = getValueFromInput("cashOut-amount");
 
      const currentBalance = getBalance();   
     
@@ -14,7 +14,7 @@
             alert("Insufficient balance. Please try again.");
             return;
         }
-        const Pin = getValueFromInput("cashout-pin");
+        const Pin = getValueFromInput("cashOut-pin");
         if (Pin === "1234") {
 
          alert("Cash out successful! Your new balance is: " + newBalance);
@@ -24,7 +24,7 @@
     const newHistory = document.createElement("div");
     newHistory.innerHTML= `
     <div class="transaction-card p-5 bg-base-100">
-                 cashout ${cashOutAmount} tk Success to ${cashOutNumber} ,at ${new Date()} 
+                 cashOut ${cashOutAmount} tk Success to ${cashOutNumber} ,at ${new Date()} 
 
          </div>
          `;
@@ -35,9 +35,9 @@
          return;
         }
 });
-    // document.getElementById("cashout-btn").addEventListener("click", function() {
+    // document.getElementById("cashOut-btn").addEventListener("click", function() {
 
-//     const cashOutNumberInput = document.getElementById("cashout-number");
+//     const cashOutNumberInput = document.getElementById("cashOut-number");
 //      const cashOutNumber = cashOutNumberInput.value;
 //      console.log(cashOutNumber);
 //      if(cashOutNumber.length !== 11 ){
@@ -45,7 +45,7 @@
 //         return;
 //      }
 
-//     const cashOutAmountInput = document.getElementById("cashout-amount");
+//     const cashOutAmountInput = document.getElementById("cashOut-amount");
 //     const cashOutAmount = cashOutAmountInput.value;
 //     console.log(cashOutAmount);
 
@@ -62,7 +62,7 @@
 //        console.log("New Balance:",newBalance);
 
 
-//        const cashOutPinInput = document.getElementById("cashout-pin");
+//        const cashOutPinInput = document.getElementById("cashOut-pin");
 //        const Pin = cashOutPinInput.value;
 //        if (Pin === "1234") {
 

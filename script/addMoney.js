@@ -6,8 +6,8 @@ document.getElementById("add-money-btn").addEventListener("click", function() {
     }
 
 
-    const accno = getValueFromInput("add-money-account");
-    if (accno.length != 11) {
+    const accNo = getValueFromInput("add-money-account");
+    if (accNo.length != 11) {
         alert("Please enter a valid bank account number.");
         return;
     }
@@ -25,7 +25,7 @@ document.getElementById("add-money-btn").addEventListener("click", function() {
     const newHistory = document.createElement("div");
     newHistory.innerHTML= `
     <div class="transaction-card p-5 bg-base-100">
-                 Add MOney Success from ${bankAccount} , accno ${accno} at ${new Date()} 
+                 Add MOney Success from ${bankAccount} , accNo ${accNo} at ${new Date()} 
 
          </div>
          `;
